@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 156px;
+    padding-right: 156px;
+    row-gap: 48px;
+    column-gap: 24px;
+    margin: 24px auto;
+    max-width: 1128px;
+    justify-content: center;
+    
+}
+
+.gallery-item {
+    width: calc((100% - 48px) / 3);
+    height: auto;
+    flex-grow: 0;
+    list-style: none;
+}
+
+.gallery-image{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    
+}
+
+.gallery-image:hover,
+.gallery-image:focus {
+    transform: scale(1.07);
+    opacity: 1;
+    cursor: pointer; 
+}
+
