@@ -1,13 +1,11 @@
-// Описаний в документації
+//Підключаємо бібліотеки
 import flatpickr from "flatpickr";
-// Додатковий імпорт стилів
 import "flatpickr/dist/flatpickr.min.css";
-// Описаний у документації
+
 import iziToast from "izitoast";
-// Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
 
-let userSelectedDate = null;
+let userSelectedDate = null;//змінна для зберігання обраної дати
 let timerId = null;
 
 const dateInput = document.querySelector('#datetime-picker');
@@ -32,7 +30,6 @@ const options = {
         title: 'Error',
         message: 'Please choose a date in the future',
         position: 'topCenter',
-        
       });
       //дезактивуємо кнопку, щоб не можна було запустити таймер,
       // поки не оберемо іншу дату 
@@ -74,7 +71,7 @@ btnstart.addEventListener('click', () => {//якщо натиснули кноп
   }, 1000);//->кожну секунду, рядок 59
 });
 
-// знаходимо в html фтрибути, зберігаємо у змінні, 
+// знаходимо в html aтрибути, зберігаємо у змінні, 
 //щоб передати їм дані і вмвести інф-ю на екран
 const daysEl = document.querySelector('[data-days]');
 const hoursEl = document.querySelector('[data-hours]');
