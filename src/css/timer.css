@@ -22,19 +22,22 @@
 .date-input:hover,
 .date-input:focus,
 .date-input:active{
-    outline: none;
-    border-color: inherit; 
+    outline: none; 
     box-shadow: none;
     border: 1px solid #4e75ff;
 }
-input [type="text"]{
+input[type="text"]{
     font-family:"Montserrat", sans-serif;
+    font-size: 24px;
     letter-spacing: 0.04em;
     color: #2e2f42;
     padding: 8px 16px;
 }
 input:active{
     color: #000;
+}
+.date-input:disabled:hover {
+     border: 1px solid #808080;
 }
 .btn-start{
     display: flex;
@@ -61,6 +64,10 @@ input:active{
     background-color: #4e75ff;
     color: #fff;
 
+}
+.btn-start:disabled:hover {
+    background-color: #cfcfcf;
+    color: #989898;
 }
 .timer{
     display: flex;

@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./iziToast.min.css"/>
   </head>
   <body>
     <div class="date">
     <input class="date-input" type="text" id="datetime-picker" />
-<button class="btn-start" type="button" data-start>Start</button>
+<button class="btn-start" type="button" data-start disabled>Start</button>
 </div>
 <div class="timer">
   <div class="field">
@@ -33,10 +34,6 @@
 </div>
     <main>
       <a class="back-link" href="./index.html">Go back Menu</a>
-      <div class="container">
-        <!-- <h1 class="main-title">Timer</h1> -->
-        <ul class="timer"></ul>
-      </div>
     </main>
     <script type="module" src="./js/1-timer.js"></script>
   </body>
